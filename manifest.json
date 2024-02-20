@@ -1,0 +1,61 @@
+{
+  "manifest_version": 2,
+  "name": "Eyeroll",
+  "version": "1.2",
+  "description": "Scroll pages with the blink of an eye",
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_icon": "icons/icon-dark.svg",
+    "theme_icons": [
+      {
+        "light": "icons/icon-light.svg",
+        "dark": "icons/icon-dark.svg",
+        "size": 16
+      },
+      {
+        "light": "icons/icon-light.svg",
+        "dark": "icons/icon-dark.svg",
+        "size": 32
+      }
+    ]
+  },
+  "web_accessible_resources": [
+    "style.css",
+    "tensor/script.js",
+    "tensor/face_landmarker.task",
+    "mediapipe-tasks-vision-0.10.9/vision_bundle.cjs",
+    "mediapipe-tasks-vision-0.10.9/vision_bundle.cjs.map",
+    "mediapipe-tasks-vision-0.10.9/vision_bundle.mjs.map",
+    "mediapipe-tasks-vision-0.10.9/vision_bundle.mjs",
+    "mediapipe-tasks-vision-0.10.9/vision.d.ts",
+    "mediapipe-tasks-vision-0.10.9/wasm/vision_wasm_internal.wasm",
+    "mediapipe-tasks-vision-0.10.9/wasm/vision_wasm_nosimd_internal.wasm",
+    "mediapipe-tasks-vision-0.10.9/wasm/vision_wasm_internal.js",
+    "mediapipe-tasks-vision-0.10.9/wasm/vision_wasm_nosimd_internal.js"
+  ],
+  "icons": {
+    "48": "icons/icon.png",
+    "96": "icons/iconX2.png"
+  },
+  "options_ui": {
+    "page": "options.html",
+    "browser_style": true
+  },
+  "commands": {
+    "_execute_browser_action": {
+      "suggested_key": {
+        "default": "Ctrl+Alt+E"
+      },
+      "description": "Toggle Eyeroll"
+    }
+  }
+}

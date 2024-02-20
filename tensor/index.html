@@ -1,0 +1,35 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Cache-control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <title>Headroll</title>
+  <style>
+    video {
+      position: absolute;
+      width: 10rem;
+      bottom: 1rem;
+      right: 1rem;
+    }
+  </style>
+  <script src="script.js" type="module"></script>
+</head>
+
+<body>
+  <h1>Face landmark detection using the MediaPipe FaceLandmarker task</h1>
+
+  <h2>Demo: Webcam continuous face landmarks detection</h2>
+  <p id="status">waiting...</p>
+  <div id="liveView" class="videoView">
+    <button id="webcamButton">
+      ENABLE WEBCAM
+    </button>
+    <div style="position: relative;">
+      <video id="webcam" autoplay playsinline></video>
+    </div>
+  </div>
+</body>
+
+</html>

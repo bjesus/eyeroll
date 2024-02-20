@@ -1,0 +1,47 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <style>
+    body {
+      margin: 0 1rem;
+    }
+
+    span {
+      display: block;
+      font-size: 80%;
+      margin-bottom: 0.5rem;
+    }
+  </style>
+</head>
+
+<body>
+  <form>
+    <p>
+      <label for="blink_threshold">Blink threshold</label>
+      <span>How good you are blinking, between 0 to 1. Will determine how sensitive the detection is</span>
+      <input placeholder="0.35" step="0.01" type="number" id="blink_threshold" />
+    </p>
+
+    <p>
+      <label for="time_threshold">Time threshold</label>
+      <span>Time in milliseconds before the scroll takes place</span>
+      <input placeholder="500" type="number" id="time_threshold" />
+    <p>
+    <p>
+      <label for="video_size">Video size</label>
+      <span>Video max-size in pixels</span>
+      <input placeholder="150" type="number" id="video_size" />
+    </p>
+
+
+    <button type="submit">Save</button>
+  </form>
+  <script src="options.js"></script>
+</body>
+
+
+
+</html>
